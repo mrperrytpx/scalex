@@ -69,7 +69,9 @@ selectElement.addEventListener("change", (event) => {
         const path = document.createElement("p");
         path.classList.add("no-solutions");
         path.textContent =
-            "No solutions exist for starting point " + event.target.value + ".";
+            "No solutions exist from starting point " +
+            event.target.value +
+            ".";
         allHousesWrapper.appendChild(path);
         return;
     }
