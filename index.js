@@ -67,7 +67,7 @@ selectElement.addEventListener("change", (event) => {
 
     if (!allSolutions.length) {
         const totalSolution = document.querySelector(".total");
-        totalSolution.remove();
+        if (totalSolution) totalSolution.remove();
         const path = document.createElement("p");
         path.classList.add("no-solutions");
         path.textContent =
